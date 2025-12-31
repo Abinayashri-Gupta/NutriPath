@@ -70,9 +70,11 @@ def format_diet_plan_as_table(diet_plan_text):
 
 # Streamlit UI
 st.set_page_config(page_title="Nutri Path", layout="wide")
+st.title("NutriPath")
 
-st.title("Nutri Path ad an **image with health information**, ask questions, and get a structured diet plan.")
-
+st.caption(
+    "Upload an image with health information, ask questions, and get a structured diet plan."
+)
 # Upload file
 uploaded_file = st.file_uploader("📂 Upload an image", type=["png", "jpg", "jpeg"])
 
